@@ -12,7 +12,7 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware) {
-        $middleware->trustHosts(at: [env('APP_URL')]);
+        $middleware->trustHosts(at: ['https://noodle-educative.up.railway.app']);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
