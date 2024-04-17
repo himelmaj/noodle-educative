@@ -13,6 +13,7 @@ return Application::configure(basePath: dirname(__DIR__))
     )
     ->withMiddleware(function (Middleware $middleware) {
         $middleware->trustHosts(at: ['https://noodle-educative.up.railway.app']);
+        // $middleware->trustProxies();
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
